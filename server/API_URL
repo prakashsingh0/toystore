@@ -1,0 +1,46 @@
+#register URL
+method POST
+http://localhost:8080/api/route/user/register
+
+{"firstName":"prakash",
+"lastName":"singh",
+"phone":"7991333004",
+  "email":"singh@gmail.com",
+  "password":"test"
+}
+
+#login URL
+method POST
+http://localhost:8080/api/route/user/login
+
+{
+  "userdata":"singh@gmail.com",
+  "password":"test"
+}
+
+# add toy URL
+method POST
+http://localhost:8080/api/route/user/toy
+
+{
+  "title":"singh",
+  "toy":"test jdafjkdjka jnda njdap"
+}
+
+# find by title of the toy URL
+method GET
+http://localhost:8080/api/route/user/find/singh
+
+Here singh is the title of the toy
+
+# update toy ditails by id 
+method PUT
+http://localhost:8080/api/route/user/updatetoy/66acec47d162520ea54902f9
+
+here 66acec47d162520ea54902f9 is the id of the toy
+
+# delete toy by  id
+method DELETE
+http://localhost:8080/api/route/user/deletetoy/66acec47d162520ea54902f9
+
+here 66acec47d162520ea54902f9 is the id of the toy
