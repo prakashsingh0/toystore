@@ -1,0 +1,11 @@
+set_dotenv:{
+    PORT=8080, #set port
+
+
+DBURL="",  #add mongodb database url
+JWT_KEY="",    # add secret key
+BASE_URL='http://localhost:3000', #add frontend base url for the access the backend server
+
+}
+use command npm i for the installing all the dependenceis
+use command nodemon for run the server
